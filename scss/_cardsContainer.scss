@@ -1,0 +1,16 @@
+.card_container{
+    background-color: rgb(223, 223, 223);
+    height: calc(70vh - 64px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container_unit{
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    height: 350px;
+    border-radius: 10px;
+}

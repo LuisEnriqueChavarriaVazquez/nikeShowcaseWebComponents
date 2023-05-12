@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["style.scss","_nav.scss","_body.scss","_cardsContainer.scss","_carousel.scss"],"names":[],"mappings":"AAKQ,mMCLR,IACI,yBACA,WACA,YACA,kBACA,+DAEA,MACI,WACA,YACA,aACA,uBACA,mBACA,iBACA,gBACA,cCfR,KACI,sBCDJ,gBACI,yBACA,yBACA,WAEA,aACA,uBACA,mBAGJ,qBACI,sBACA,UACA,aACA,mBCdJ,oBACI,yBACA,WACA,YACA,kBAEA,aACA,sCACA,wBACA,2BACA,mBACA,SAEA,kBJNJ,EACI,SACA,UACA,sBACA,uFACA","file":"style.css"}

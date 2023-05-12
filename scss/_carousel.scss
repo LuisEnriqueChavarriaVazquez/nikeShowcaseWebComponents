@@ -1,0 +1,15 @@
+.carousel_container{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: calc(30vh);
+    padding-left: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    overflow-x: scroll;    
+}
