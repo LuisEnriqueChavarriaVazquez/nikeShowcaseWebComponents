@@ -18,10 +18,4 @@
             height: 20vh;
         }
     }
-    
-    @media only screen and (orientation: landscape) {
-        & {
-            height: calc(50vh);
-        }
-    }
 }
