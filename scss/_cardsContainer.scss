@@ -6,6 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 800px) {
+        &{
+            height: calc(80vh - 48px);
+        }
+    }
 }
 
 .card_container_unit{
@@ -13,4 +19,23 @@
     width: 40%;
     height: 360px;
     border-radius: 10px;
+
+    @media screen and (max-width: 1400px) {
+        &{
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        &{
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        &{
+            height: calc(65vh);
+            width: 80%;
+        }
+    }
 }

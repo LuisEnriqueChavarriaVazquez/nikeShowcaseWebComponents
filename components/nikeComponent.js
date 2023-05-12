@@ -67,6 +67,12 @@ class cardUnit extends HTMLElement{
                     box-shadow: 0 19px 38px rgba(0,0,0,0.15), 0 15px 12px rgba(0,0,0,0.12);
                 }
 
+                @media screen and (max-width: 800px) {
+                    :host section{
+                        grid-template-columns: 1fr;
+                    }
+                }
+
                 :host section .imageContainer{
                     width: 100%;
                     height: 100%;
@@ -78,8 +84,22 @@ class cardUnit extends HTMLElement{
                     background-color: ${datos.color};
                 }
 
+                @media screen and (max-width: 800px) {
+                    :host section .imageContainer{
+                        padding: 10px 20px;
+                        height: 100px;
+                        border-radius: 10px 10px 0 0;
+                    }
+                }
+
                 :host section .imageContainer span{
                     font-size: 7rem;
+                }
+
+                @media screen and (max-width: 800px) {
+                    :host section .imageContainer span{
+                        font-size: 5rem;
+                    }
                 }
 
                 :host section .imageContainer .tenisImage{
@@ -96,11 +116,49 @@ class cardUnit extends HTMLElement{
                     left: -125px;
                 }
 
+                @media screen and (max-width: 800px) {
+                    :host section .imageContainer .tenisImage{
+                        width: 80%;
+                        height: 250px;
+                        transform: scaleX(-1) rotate(0deg);
+    
+                        position: relative;
+                        top: -100px;
+                        left: 40px;
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    :host section .imageContainer .tenisImage{
+                        width: 70%;
+                        height: 150px;
+                        top: -80px;
+                        left: 105px;
+                    }
+                }
+
+                @media screen and (max-width: 350px) {
+                    :host section .imageContainer .tenisImage{
+                        width: 90%;
+                        height: 130px;
+                        top: -55px;
+                        left:10px;
+                    }
+                }
+
                 .tenisInfo{
                     width: 100%;
                     height: 100%;
                     padding: 20px 30px 20px 30px;
                     box-sizing: border-box;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .tenisInfo{
+                        width: 100%;
+                        height: auto;
+                        padding: 0px 20px 0 20px;
+                    }
                 }
 
                 .tenisInfo p{
@@ -114,6 +172,18 @@ class cardUnit extends HTMLElement{
                     font-size: 3.3rem;
                     font-weight: 800;
                     margin-top: 25px; 
+                }
+
+                @media screen and (max-width: 800px) {
+                    .tenisName{
+                        margin-top: 0px; 
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    .tenisName{
+                        font-size: 2.7rem;
+                    }
                 }
 
                 .tenisCollection{
@@ -132,12 +202,29 @@ class cardUnit extends HTMLElement{
                     padding-left: 35px;
                 }
 
+                @media screen and (max-width: 800px) {
+                    .tenisDesc{
+                        height: auto;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    }
+    
+                }
+
                 .containerBuy{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: auto;
                     gap: 10px;
                     margin-top: 20px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    .containerBuy{
+                        grid-template-columns: 1fr;
+                    }
                 }
 
                 .tenisPrice{
@@ -159,6 +246,12 @@ class cardUnit extends HTMLElement{
                     background-color: ${datos.color};
                     transition: all .2s ease;
                     cursor: pointer;
+                }
+
+                @media screen and (max-width: 500px) {
+                    .tenisButton{
+                        height: 40px;
+                    }
                 }
 
                 .tenisButton:hover{
