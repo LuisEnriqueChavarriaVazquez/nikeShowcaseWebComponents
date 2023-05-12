@@ -10,10 +10,15 @@
     <!--Estilos de la pagina-->
     <link rel="stylesheet" href="scss/style.css">
 
+    <!--Scripts propios-->
+    <script src="scripts/clickTenis.js" defer></script>
+    
     <!--Componentes-->
+    <script src="components/dataComponents.js"></script>
     <script src="components/nikeCarousel.js" defer type="module"></script>
     <script src="components/nikeComponent.js" defer type="module"></script>
-    
+
+
 
 </head>
 
@@ -26,24 +31,27 @@
     <!--Cards-->
     <section class="card_container">
 
-        <div class="card_container_unit"></div>
+        <!--attrs == title, img, collection, description, price-->
+        <card-unit class="card_container_unit" 
+            id="0">
+        </card-unit>
 
     </section>
 
     <!--Carousel-->
-    <section class="carousel_container">
-        <carousel-unit img="img/amarillo.png"></carousel-unit>
-        <carousel-unit img="img/azul.png"></carousel-unit>
-        <carousel-unit img="img/gris.png"></carousel-unit>
-        <carousel-unit img="img/gris2.png"></carousel-unit>
-        <carousel-unit img="img/lightBlue.png"></carousel-unit>
-        <carousel-unit img="img/menta.png"></carousel-unit>
-        <carousel-unit img="img/prupura.png"></carousel-unit>
-        <carousel-unit img="img/rojo.png"></carousel-unit>
-        <carousel-unit img="img/rojoFuerte.png"></carousel-unit>
-        <carousel-unit img="img/rosa.png"></carousel-unit>
-        <carousel-unit img="img/space.png"></carousel-unit>
-        <carousel-unit img="img/verde.png"></carousel-unit>
+    <section class="carousel_container" id="carousel_container">
+        <carousel-unit id="0" img="img/amarillo.png"></carousel-unit>
+        <carousel-unit id="1" img="img/azul.png"></carousel-unit>
+        <carousel-unit id="2" img="img/gris.png"></carousel-unit>
+        <carousel-unit id="3" img="img/gris2.png"></carousel-unit>
+        <carousel-unit id="4" img="img/lightBlue.png"></carousel-unit>
+        <carousel-unit id="5" img="img/menta.png"></carousel-unit>
+        <carousel-unit id="6" img="img/prupura.png"></carousel-unit>
+        <carousel-unit id="7" img="img/rojo.png"></carousel-unit>
+        <carousel-unit id="8" img="img/rojoFuerte.png"></carousel-unit>
+        <carousel-unit id="9" img="img/rosa.png"></carousel-unit>
+        <carousel-unit id="10" img="img/space.png"></carousel-unit>
+        <carousel-unit id="11" img="img/verde.png"></carousel-unit>
     </section>
 
 </body>
