@@ -14,6 +14,8 @@ class cardUnit extends HTMLElement{
     attributeChangedCallback(attr, oldVal, newVal){
         if(oldVal !== newVal){
             this[attr] = newVal;
+            //En caso de que los elementos se actulizen hago render
+            this.render();
         }
     }
 
@@ -81,7 +83,7 @@ class cardUnit extends HTMLElement{
                 }
 
                 :host section .imageContainer .tenisImage{
-                    width: 170%;
+                    width: 150%;
                     height: 100%;
                     background-image: url('${datos.img}');
                     background-position: center;
@@ -123,6 +125,7 @@ class cardUnit extends HTMLElement{
                 }
 
                 .tenisDesc{
+                    height: 140px;
                     font-size: 1.2rem;
                     font-weight: 600;
                     padding-top: 20px;
@@ -154,12 +157,22 @@ class cardUnit extends HTMLElement{
                     align-items: center;
                     color: #fff;
                     background-color: ${datos.color};
+                    transition: all .2s ease;
+                    cursor: pointer;
+                }
+
+                .tenisButton:hover{
+                    background-color: #ececec;
+                    color: ${datos.color};
+                    font-weight: 900;
                 }
             </style>
         `;
     }
 
     render(){
+        //Si ya hay elementos viejos los borro, para renderizar lo nuevo
+        this.shadowRoot.innerHTML = '';
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 
