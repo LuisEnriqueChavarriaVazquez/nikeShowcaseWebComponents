@@ -12,12 +12,6 @@
             height: calc(80vh - 48px);
         }
     }
-
-    @media only screen and (orientation: landscape) {
-        & {
-            height: calc(160vh);
-        }
-    }
 }
 
 .card_container_unit {
